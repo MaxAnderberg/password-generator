@@ -5,7 +5,18 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundColor: {
+        'almost-white': '#E6E5EA',
+        'neon-green': '#A4FFAF',
+        'dark-grey': '#24232C',
+      },
+      textColor: {
+        'almost-white': '#E6E5EA',
+        'neon-green': '#A4FFAF',
+        'dark-grey': '#24232C',
+      }
+    },
   },
   plugins: [require("@tailwindcss/forms")],
 }
