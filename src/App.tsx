@@ -22,7 +22,7 @@ function App() {
           <input
             type="range"
             onChange={handleCharLength}
-            className="w-full appearance-none bg-black h-[8px] range"
+            className="w-full appearance-none bg-black h-[8px]"
             min="0"
             max="20"
           />
@@ -30,19 +30,19 @@ function App() {
         <section className="flex flex-col items-start gap-[17px] mb-[32px]">
           <section className="flex flex-row-reverse">
             <label>Include Uppercase Letters</label>
-            <input type="checkbox" className="mr-[20px] " />
+            <input type="checkbox" className="mr-[20px] h-[20px] w-[20px] bg-transparent border-[#E6E5EA] checked:bg-[#A4FFAF] " />
           </section>
           <section className="flex flex-row-reverse">
             <label>Include Lowercase Letters</label>
-            <input type="checkbox" className="mr-[20px]" />
+            <input type="checkbox" className="mr-[20px] h-[20px] w-[20px] bg-transparent border-[#E6E5EA]" />
           </section>
           <section className="flex flex-row-reverse">
             <label>Include Numbers</label>
-            <input type="checkbox" className="mr-[20px]" />
+            <input type="checkbox" className="mr-[20px] h-[20px] w-[20px] bg-transparent border-[#E6E5EA]" />
           </section>
           <section className="flex flex-row-reverse">
             <label>Include Symbols</label>
-            <input type="checkbox" className="mr-[20px]" />
+            <input type="checkbox" className="mr-[20px] h-[20px] w-[20px] bg-transparent border-[#E6E5EA]" />
           </section>
         </section>
         <section className='bg-[#18171F] p-[17px] mb-[16px]'>
