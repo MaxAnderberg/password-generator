@@ -10,10 +10,10 @@ function App() {
   return (
     <div className="App flex flex-col items-center mt-[64px] text-[#E6E5EA] mx-[16px] overflow-hidden">
       <h1 className="text-[#817D92] mb-[16px]">Password Generator</h1>
-      <section className="bg-[#24232C] w-full mb-[16px] p-[16px]">
+      <section className="bg-dark-grey w-full mb-[16px] p-[16px]">
         Generated Password
       </section>
-      <article className="bg-[#24232C] p-[16px] w-full">
+      <article className="bg-dark-grey p-[16px] w-full">
         <section className="flex justify-between mb-[23px]">
           <span>Character Length</span>
           <span className='text-[#A4FFAF] text-[24px] font-bold'>{value}</span>
