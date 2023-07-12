@@ -22,7 +22,7 @@ function App() {
           <input
             type="range"
             onChange={handleCharLength}
-            className="w-full appearance-none bg-black h-[8px] accent-red-400"
+            className="w-full appearance-none bg-black h-[8px] range"
             min="0"
             max="20"
           />
@@ -30,7 +30,7 @@ function App() {
         <section className="flex flex-col items-start gap-[17px] mb-[32px]">
           <section className="flex flex-row-reverse">
             <label>Include Uppercase Letters</label>
-            <input type="checkbox" className="mr-[20px]" />
+            <input type="checkbox" className="mr-[20px] " />
           </section>
           <section className="flex flex-row-reverse">
             <label>Include Lowercase Letters</label>
