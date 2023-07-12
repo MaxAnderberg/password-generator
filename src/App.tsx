@@ -30,19 +30,19 @@ function App() {
         <section className="flex flex-col items-start gap-[17px] mb-[32px]">
           <section className="flex flex-row-reverse">
             <label>Include Uppercase Letters</label>
-            <input type="checkbox" className="mr-[20px] h-[20px] w-[20px] bg-transparent border-[#E6E5EA] checked:bg-[#A4FFAF] " />
+            <input type="checkbox" className="mr-[20px] h-[20px] w-[20px] bg-transparent border-[#E6E5EA] checked:bg-neon-green " />
           </section>
           <section className="flex flex-row-reverse">
             <label>Include Lowercase Letters</label>
-            <input type="checkbox" className="mr-[20px] h-[20px] w-[20px] bg-transparent border-[#E6E5EA]" />
+            <input type="checkbox" className="mr-[20px] h-[20px] w-[20px] bg-transparent border-[#E6E5EA] checked:bg-neon-green" />
           </section>
           <section className="flex flex-row-reverse">
             <label>Include Numbers</label>
-            <input type="checkbox" className="mr-[20px] h-[20px] w-[20px] bg-transparent border-[#E6E5EA]" />
+            <input type="checkbox" className="mr-[20px] h-[20px] w-[20px] bg-transparent border-[#E6E5EA] checked:bg-neon-green" />
           </section>
           <section className="flex flex-row-reverse">
             <label>Include Symbols</label>
-            <input type="checkbox" className="mr-[20px] h-[20px] w-[20px] bg-transparent border-[#E6E5EA]" />
+            <input type="checkbox" className="mr-[20px] h-[20px] w-[20px] bg-transparent border-[#E6E5EA] checked:bg-neon-green" />
           </section>
         </section>
         <section className='flex bg-[#18171F] p-[17px] mb-[16px] justify-between'>
