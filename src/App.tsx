@@ -16,7 +16,7 @@ function App() {
       <article className="bg-[#24232C] p-[16px] w-full">
         <section className="flex justify-between mb-[23px]">
           <span>Character Length</span>
-          <span>{value}</span>
+          <span className='text-[#A4FFAF] text-[24px] font-bold'>{value}</span>
         </section>
         <section className="mb-[42px]">
           <input
@@ -45,8 +45,9 @@ function App() {
             <input type="checkbox" className="mr-[20px] h-[20px] w-[20px] bg-transparent border-[#E6E5EA]" />
           </section>
         </section>
-        <section className='bg-[#18171F] p-[17px] mb-[16px]'>
+        <section className='flex bg-[#18171F] p-[17px] mb-[16px] justify-between'>
           <p className='text-[#817D92]'>STRENGTH</p>
+          <p className='text-[#817D92]'>MEDIUM</p>
         </section>
         <button className="bg-[#A4FFAF] text-[#24232C] w-full py-[17px] px-[103px]">Generate</button>
       </article>
