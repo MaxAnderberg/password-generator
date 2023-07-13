@@ -1,5 +1,6 @@
 import { useState, useEffect, ChangeEvent } from "react";
 import "./App.css";
+import DisplayGeneratedPassword from "./components/DisplayGeneratedPassword";
 
 function App() {
   const [value, setValue] = useState("20");
@@ -10,12 +11,7 @@ function App() {
   return (
     <div className="App flex flex-col items-center mt-[64px] text-[#E6E5EA] mx-[16px] overflow-hidden">
       <h1 className="text-[#817D92] mb-[16px]">Password </h1>
-      <section className="bg-dark-grey w-full mb-[16px] p-[16px]">
-        <p className='text-almost-white text-[22px]'>
-          12345678912345678912
-        </p>
-
-      </section>
+      <DisplayGeneratedPassword />
       <article className="bg-dark-grey p-[16px] w-full">
         <section className="flex justify-between mb-[23px]">
           <span className=''>Character Length</span>
