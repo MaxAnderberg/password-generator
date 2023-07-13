@@ -1,6 +1,9 @@
+type Props = {
+	handleCharLength: Function;
+	value: string;
+};
 
-
-const PasswordGenerator = () => {
+const PasswordGenerator = ({ handleCharLength, value}: Props) => {
 	return (
 		<form className="bg-dark-grey p-[16px] w-full">
 			<section className="flex justify-between mb-[23px]">
@@ -40,5 +43,7 @@ const PasswordGenerator = () => {
 			</section>
 			<button className="bg-[#A4FFAF] text-[#24232C] w-full py-[17px] px-[103px]">Generate</button>
 		</form>
-	)
-}
+	);
+};
+
+export default PasswordGenerator;
