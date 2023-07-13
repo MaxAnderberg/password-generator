@@ -1,21 +1,24 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, ChangeEvent } from "react";
 import "./App.css";
 
 function App() {
   const [value, setValue] = useState("20");
-  const handleCharLength = (event) => {
+  const handleCharLength = (event: ChangeEvent<HTMLInputElement>) => {
     setValue(event.target.value);
   };
 
   return (
     <div className="App flex flex-col items-center mt-[64px] text-[#E6E5EA] mx-[16px] overflow-hidden">
-      <h1 className="text-[#817D92] mb-[16px]">Password Generator</h1>
+      <h1 className="text-[#817D92] mb-[16px]">Password </h1>
       <section className="bg-dark-grey w-full mb-[16px] p-[16px]">
-        Generated Password
+        <p className='text-almost-white text-[22px]'>
+          12345678912345678912
+        </p>
+
       </section>
       <article className="bg-dark-grey p-[16px] w-full">
         <section className="flex justify-between mb-[23px]">
-          <span>Character Length</span>
+          <span className=''>Character Length</span>
           <span className='text-[#A4FFAF] text-[24px] font-bold'>{value}</span>
         </section>
         <section className="mb-[42px]">
