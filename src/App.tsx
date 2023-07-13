@@ -9,7 +9,7 @@ function App() {
   };
 
   return (
-    <div className="App flex flex-col items-center mt-[64px] text-[#E6E5EA] mx-[16px] overflow-hidden">
+    <div className="App flex flex-col items-center mt-[64px] text-[#E6E5EA] mx-[16px] overflow-hidden font-[JetBrains-Mono] font-bold">
       <h1 className="text-[#817D92] mb-[16px]">Password </h1>
       <DisplayGeneratedPassword />
       <article className="bg-dark-grey p-[16px] w-full">
