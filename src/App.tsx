@@ -4,7 +4,21 @@ import DisplayGeneratedPassword from "./components/DisplayGeneratedPassword";
 import PasswordGenerator from "./components/PasswordGenerator";
 
 function App() {
+  interface PasswordConfig {
+    uppercase: boolean
+    lowercase: boolean
+    numbers: boolean
+    symbols: boolean
+  }
+
   const [value, setValue] = useState("20");
+  const [passwordConfig, setPasswordConfig] = useState<PasswordConfig>({
+    lowercase: false,
+    uppercase: false,
+    numbers: false,
+    symbols: false,
+  })
+
   const handleCharLength = (event: ChangeEvent<HTMLInputElement>) => {
     setValue(event.target.value);
   };

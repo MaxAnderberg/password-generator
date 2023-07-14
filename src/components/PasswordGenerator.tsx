@@ -4,16 +4,12 @@ import CheckBox from './CheckBox';
 type Props = {
 	handleCharLength: Function;
 	value: string;
+	setPasswordConfig: Function
 };
 
-/*
-	TODO: Create an on submit handler
-	TODO: Create an verify form is working
-	TODO: Hook form up to global state
-*/
+const PasswordGenerator = ({ handleCharLength, value, setPasswordConfig}: Props) => {
 
-const PasswordGenerator = ({ handleCharLength, value}: Props) => {
-
+	// TODO: I will have to extract these states to global level.
 	const [uppercase, setUppercase] = useState(false)
 	const [lowercase, setLowercase] = useState(false)
 	const [numbers, setNumbers] = useState(false)
@@ -21,6 +17,12 @@ const PasswordGenerator = ({ handleCharLength, value}: Props) => {
 	
 	const handleOnSubmit = ( event:FormEvent<HTMLFormElement> ) => {
 		event.preventDefault()
+		setPasswordConfig({
+			uppercase,
+			lowercase,
+			numbers,
+			symbols
+		})
 	}
 
 	return (
