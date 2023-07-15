@@ -20,11 +20,13 @@ const PasswordGenerator = ({setPasswordConfig}: Props) => {
 	
 	const handleOnSubmit = ( event:FormEvent<HTMLFormElement> ) => {
 		event.preventDefault()
+		const charLength = parseInt(value)
 		setPasswordConfig({
 			uppercase,
 			lowercase,
 			numbers,
-			symbols
+			symbols,
+			charLength,
 		})
 	}
 
