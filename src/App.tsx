@@ -8,6 +8,7 @@ export interface PasswordConfig {
   lowercase: boolean
   numbers: boolean
   symbols: boolean
+  charLength: number
 }
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
     uppercase: false,
     numbers: false,
     symbols: false,
+    charLength: 10,
   })
 
   return (
