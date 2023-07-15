@@ -1,5 +1,12 @@
 import CopyIcon from "./CopyIcon";
-const DisplayGeneratedPassword = () => {
+import { PasswordConfig } from "../App";
+
+interface Props {
+	passwordConfig: PasswordConfig
+}
+
+const DisplayGeneratedPassword = ({passwordConfig}: Props) => {
+	console.log(passwordConfig)
 	return (
 	      <section className="bg-dark-grey w-full mb-[16px] p-[16px] flex">
 	        <p className='text-almost-white text-[22px]'>
