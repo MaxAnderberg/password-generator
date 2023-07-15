@@ -26,7 +26,6 @@ const PasswordGenerator = ({setPasswordConfig}: Props) => {
 			numbers,
 			symbols
 		})
-		console.log('yaaaas daddy')
 	}
 
 	return (
