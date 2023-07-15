@@ -2,18 +2,21 @@ import { useState, ChangeEvent, FormEvent } from 'react'
 import CheckBox from './CheckBox';
 
 type Props = {
-	handleCharLength: Function;
-	value: string;
 	setPasswordConfig: Function
 };
 
-const PasswordGenerator = ({ handleCharLength, value, setPasswordConfig}: Props) => {
+const PasswordGenerator = ({setPasswordConfig}: Props) => {
 
 	// TODO: I will have to extract these states to global level.
 	const [uppercase, setUppercase] = useState(false)
 	const [lowercase, setLowercase] = useState(false)
 	const [numbers, setNumbers] = useState(false)
 	const [symbols, setSymbols] = useState(false)
+	const [value, setValue] = useState("20");
+
+	const handleCharLength = (event: ChangeEvent<HTMLInputElement>) => {
+		setValue(event.target.value);
+	  };
 	
 	const handleOnSubmit = ( event:FormEvent<HTMLFormElement> ) => {
 		event.preventDefault()
@@ -23,6 +26,7 @@ const PasswordGenerator = ({ handleCharLength, value, setPasswordConfig}: Props)
 			numbers,
 			symbols
 		})
+		console.log('yaaaas daddy')
 	}
 
 	return (
@@ -50,7 +54,7 @@ const PasswordGenerator = ({ handleCharLength, value, setPasswordConfig}: Props)
 				<p className='text-[#817D92]'>STRENGTH</p>
 				<p className='text-[#817D92]'>MEDIUM</p>
 			</section>
-			<button className="bg-[#A4FFAF] text-[#24232C] w-full py-[17px] px-[103px]">Generate</button>
+			<button type='submit' className="bg-[#A4FFAF] text-[#24232C] w-full py-[17px] px-[103px]">Generate</button>
 		</form>
 	);
 };
