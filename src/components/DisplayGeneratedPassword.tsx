@@ -1,5 +1,6 @@
 import CopyIcon from "./CopyIcon";
 import { PasswordConfig } from "../domain/Domain";
+import { CalculatePasswordStrength } from '../PasswordStrength';
 
 interface Props {
 	passwordConfig: PasswordConfig
@@ -39,8 +40,6 @@ const generatePassword = (config: PasswordConfig): string => {
   	const randomIndex = Math.floor(Math.random() * allCharacters.length)
   	password += allCharacters[randomIndex]
   }
-  // TODO: Check the generated password so it contains the user specified requirements
-
 
   return password;
 }
