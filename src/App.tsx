@@ -3,14 +3,6 @@ import "./App.css";
 import DisplayGeneratedPassword from "./components/DisplayGeneratedPassword";
 import PasswordGenerator from "./components/PasswordGenerator";
 
-export interface PasswordConfig {
-  uppercase: boolean
-  lowercase: boolean
-  numbers: boolean
-  symbols: boolean
-  charLength: number
-}
-
 function App() {
   
   const [passwordConfig, setPasswordConfig] = useState<PasswordConfig>({
@@ -18,7 +10,7 @@ function App() {
     uppercase: false,
     numbers: false,
     symbols: false,
-    charLength: 10,
+    charLength: 1
   })
 
   return (
