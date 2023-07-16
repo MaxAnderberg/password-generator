@@ -5,7 +5,7 @@ type Props = {
 	setPasswordConfig: Function
 };
 
-const PasswordGenerator = ({setPasswordConfig}: Props) => {
+export const PasswordForm = ({setPasswordConfig}: Props) => {
 
 	// TODO: I will have to extract these states to global level.
 	const [uppercase, setUppercase] = useState(false)
@@ -59,5 +59,3 @@ const PasswordGenerator = ({setPasswordConfig}: Props) => {
 		</form>
 	);
 };
-
-export default PasswordGenerator;
