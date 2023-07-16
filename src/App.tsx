@@ -2,6 +2,7 @@ import { useState, useEffect, ChangeEvent } from "react";
 import "./App.css";
 import DisplayGeneratedPassword from "./components/DisplayGeneratedPassword";
 import PasswordGenerator from "./components/PasswordGenerator";
+import { PasswordConfig } from "./domain/Domain";
 
 function App() {
   

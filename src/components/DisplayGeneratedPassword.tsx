@@ -1,5 +1,5 @@
 import CopyIcon from "./CopyIcon";
-import { PasswordConfig } from "../App";
+import { PasswordConfig } from "../domain/Domain";
 
 interface Props {
 	passwordConfig: PasswordConfig
