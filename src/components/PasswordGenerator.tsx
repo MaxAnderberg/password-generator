@@ -41,7 +41,7 @@ const PasswordGenerator = ({setPasswordConfig}: Props) => {
 					type="range"
 					onChange={handleCharLength}
 					className="w-full appearance-none bg-black h-[8px]"
-					min="0"
+					min="4"
 					max="20"
 				/>
 			</section>
