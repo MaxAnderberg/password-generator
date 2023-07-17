@@ -1,6 +1,6 @@
 import CopyIcon from "./CopyIcon";
 import { PasswordConfig } from "../domain/Domain";
-import { CalculatePasswordStrength } from '../PasswordStrength';
+import { CalculatePasswordStrength } from '../CalculatePasswordStrength';
 
 interface Props {
 	passwordConfig: PasswordConfig
