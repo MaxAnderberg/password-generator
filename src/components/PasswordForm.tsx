@@ -53,7 +53,13 @@ export const PasswordForm = ({setPasswordConfig}: Props) => {
 			</section>
 			<section className='flex bg-[#18171F] p-[17px] mb-[16px] justify-between'>
 				<p className='text-[#817D92]'>STRENGTH</p>
-				<p className='text-[#817D92]'>MEDIUM</p>
+				<p className='text-[#817D92]'>TOO WEAK</p>
+				<div className='flex gap-[8px]'>
+					<span className='border-white w-[10px] h-[20px] bg-red-500'> </span>
+					<span className='border-white w-[10px] h-[20px] bg-red-500'> </span>
+					<span className='border-white w-[10px] h-[20px] bg-red-500'> </span>
+					<span className='border-white w-[10px] h-[20px] bg-red-500'> </span>
+				</div>
 			</section>
 			<button type='submit' className="bg-[#A4FFAF] text-[#24232C] w-full py-[17px] px-[103px]">Generate</button>
 		</form>
