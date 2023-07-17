@@ -12,7 +12,7 @@ export const DisplayPasswordStrength = ({ passwordStrength }: Props) => {
 					passwordStrength === 1
 					? (
 						<>
-						<span className='border-white w-[10px] h-[20px] bg-red-500'> </span> 
+						<span className='w-[10px] h-[20px] bg-red-500'> </span> 
 						<span className='border-[#E6E5EA] border-[2px] w-[10px] h-[20px] bg-transparent'> </span> 
 						<span className='border-[#E6E5EA] border-[2px] w-[10px] h-[20px] bg-transparent'> </span> 
 						<span className='border-[#E6E5EA] border-[2px] w-[10px] h-[20px] bg-transparent'> </span> 
@@ -25,8 +25,8 @@ export const DisplayPasswordStrength = ({ passwordStrength }: Props) => {
 					passwordStrength === 2
 					? (
 						<>
-						<span className='border-white w-[10px] h-[20px] bg-[#FB7C58]'> </span> 
-						<span className='border-white w-[10px] h-[20px] bg-[#FB7C58]'> </span>
+						<span className='w-[10px] h-[20px] bg-[#FB7C58]'> </span> 
+						<span className='w-[10px] h-[20px] bg-[#FB7C58]'> </span>
 						<span className='border-[#E6E5EA] border-[2px] w-[10px] h-[20px] bg-transparent'> </span>
 						<span className='border-[#E6E5EA] border-[2px] w-[10px] h-[20px] bg-transparent'> </span>
 						</>
@@ -38,9 +38,9 @@ export const DisplayPasswordStrength = ({ passwordStrength }: Props) => {
 					passwordStrength === 3
 					? (
 						<>
-						<span className='border-white w-[10px] h-[20px] bg-[#F8CD65]'> </span> 
-						<span className='border-white w-[10px] h-[20px] bg-[#F8CD65]'> </span>
-						<span className='border-white w-[10px] h-[20px] bg-[#F8CD65]'> </span>
+						<span className='w-[10px] h-[20px] bg-[#F8CD65]'> </span> 
+						<span className='w-[10px] h-[20px] bg-[#F8CD65]'> </span>
+						<span className='w-[10px] h-[20px] bg-[#F8CD65]'> </span>
 						<span className='border-[#E6E5EA] border-[2px] h-[20px] bg-transparent'> </span>
 						</>
 						)
@@ -51,10 +51,10 @@ export const DisplayPasswordStrength = ({ passwordStrength }: Props) => {
 					passwordStrength === 4
 					? (
 						<>
-						<span className='border-white w-[10px] h-[20px] bg-[#A4FFAF]'> </span> 
-						<span className='border-white w-[10px] h-[20px] bg-[#A4FFAF]'> </span>
-						<span className='border-white w-[10px] h-[20px] bg-[#A4FFAF]'> </span>
-						<span className='border-white w-[10px] h-[20px] bg-[#A4FFAF]'> </span>
+						<span className='w-[10px] h-[20px] bg-[#A4FFAF]'> </span> 
+						<span className='w-[10px] h-[20px] bg-[#A4FFAF]'> </span>
+						<span className='w-[10px] h-[20px] bg-[#A4FFAF]'> </span>
+						<span className='w-[10px] h-[20px] bg-[#A4FFAF]'> </span>
 						</>
 						)
 					: ''
