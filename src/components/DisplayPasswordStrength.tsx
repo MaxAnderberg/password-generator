@@ -42,7 +42,7 @@ export const DisplayPasswordStrength = ({ passwordStrength }: Props) => {
 								<span className='w-[10px] h-[20px] bg-[#F8CD65]'> </span> 
 								<span className='w-[10px] h-[20px] bg-[#F8CD65]'> </span>
 								<span className='w-[10px] h-[20px] bg-[#F8CD65]'> </span>
-								<span className='border-[#E6E5EA] border-[2px] h-[20px] bg-transparent'> </span>
+								<span className='border-[#E6E5EA] border-[2px] w-[10px] h-[20px] bg-transparent'> </span>
 							</>
 						)
 						: ''
