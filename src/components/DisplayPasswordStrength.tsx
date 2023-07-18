@@ -11,54 +11,54 @@ export const DisplayPasswordStrength = ({ passwordStrength }: Props) => {
 			<div className='flex gap-[8px]'>
 				{
 					passwordStrength === 1
-					? (
-						<>
-						<span className='w-[10px] h-[20px] bg-red-500'> </span> 
-						<span className='border-[#E6E5EA] border-[2px] w-[10px] h-[20px] bg-transparent'> </span> 
-						<span className='border-[#E6E5EA] border-[2px] w-[10px] h-[20px] bg-transparent'> </span> 
-						<span className='border-[#E6E5EA] border-[2px] w-[10px] h-[20px] bg-transparent'> </span> 
-						</>
+						? (
+							<>
+								<span className='w-[10px] h-[20px] bg-red-500'> </span> 
+								<span className='border-[#E6E5EA] border-[2px] w-[10px] h-[20px] bg-transparent'> </span> 
+								<span className='border-[#E6E5EA] border-[2px] w-[10px] h-[20px] bg-transparent'> </span> 
+								<span className='border-[#E6E5EA] border-[2px] w-[10px] h-[20px] bg-transparent'> </span> 
+							</>
 						)
-					: ''
+						: ''
 				}
 
 				{
 					passwordStrength === 2
-					? (
-						<>
-						<span className='w-[10px] h-[20px] bg-[#FB7C58]'> </span> 
-						<span className='w-[10px] h-[20px] bg-[#FB7C58]'> </span>
-						<span className='border-[#E6E5EA] border-[2px] w-[10px] h-[20px] bg-transparent'> </span>
-						<span className='border-[#E6E5EA] border-[2px] w-[10px] h-[20px] bg-transparent'> </span>
-						</>
+						? (
+							<>
+								<span className='w-[10px] h-[20px] bg-[#FB7C58]'> </span> 
+								<span className='w-[10px] h-[20px] bg-[#FB7C58]'> </span>
+								<span className='border-[#E6E5EA] border-[2px] w-[10px] h-[20px] bg-transparent'> </span>
+								<span className='border-[#E6E5EA] border-[2px] w-[10px] h-[20px] bg-transparent'> </span>
+							</>
 						)
-					: ''
+						: ''
 				}
 
-								{
+				{
 					passwordStrength === 3
-					? (
-						<>
-						<span className='w-[10px] h-[20px] bg-[#F8CD65]'> </span> 
-						<span className='w-[10px] h-[20px] bg-[#F8CD65]'> </span>
-						<span className='w-[10px] h-[20px] bg-[#F8CD65]'> </span>
-						<span className='border-[#E6E5EA] border-[2px] h-[20px] bg-transparent'> </span>
-						</>
+						? (
+							<>
+								<span className='w-[10px] h-[20px] bg-[#F8CD65]'> </span> 
+								<span className='w-[10px] h-[20px] bg-[#F8CD65]'> </span>
+								<span className='w-[10px] h-[20px] bg-[#F8CD65]'> </span>
+								<span className='border-[#E6E5EA] border-[2px] h-[20px] bg-transparent'> </span>
+							</>
 						)
-					: ''
+						: ''
 				}
 
-								{
+				{
 					passwordStrength === 4
-					? (
-						<>
-						<span className='w-[10px] h-[20px] bg-[#A4FFAF]'> </span> 
-						<span className='w-[10px] h-[20px] bg-[#A4FFAF]'> </span>
-						<span className='w-[10px] h-[20px] bg-[#A4FFAF]'> </span>
-						<span className='w-[10px] h-[20px] bg-[#A4FFAF]'> </span>
-						</>
+						? (
+							<>
+								<span className='w-[10px] h-[20px] bg-[#A4FFAF]'> </span> 
+								<span className='w-[10px] h-[20px] bg-[#A4FFAF]'> </span>
+								<span className='w-[10px] h-[20px] bg-[#A4FFAF]'> </span>
+								<span className='w-[10px] h-[20px] bg-[#A4FFAF]'> </span>
+							</>
 						)
-					: ''
+						: ''
 				}
 
 
