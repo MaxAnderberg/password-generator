@@ -3,6 +3,8 @@ import "./App.css";
 import DisplayGeneratedPassword from "./components/DisplayGeneratedPassword";
 import { PasswordForm } from "./components/PasswordForm";
 import { PasswordConfig } from "./domain/Domain";
+import { CalculatePasswordStrength } from "./CalculatePasswordStrength";
+import { GeneratePassword } from "./GeneratePassword";
 
 function App() {
   
@@ -14,11 +16,23 @@ function App() {
     charLength: 1
   })
 
+  const [password, setPassword] = useState<string>('')
+  const [passwordStrength, setPasswordStrength] = useState<number>(2)
+
+  const handleGeneratePassword = (config: PasswordConfig) => {
+    setPassword(GeneratePassword(config))
+  }
+
+    useEffect(() => {
+    setPasswordStrength(CalculatePasswordStrength(password))
+  }, [password])
+
   return (
+
     <div className="App flex flex-col items-center mt-[64px] text-[#E6E5EA] mx-[16px] overflow-hidden font-[JetBrains-Mono] font-bold">
       <h1 className="text-[#817D92] mb-[16px]">Password </h1>
-      <DisplayGeneratedPassword passwordConfig={passwordConfig}/>
-      <PasswordForm setPasswordConfig={setPasswordConfig}/>
+      <DisplayGeneratedPassword password={password}/>
+      <PasswordForm handleGeneratePassword={handleGeneratePassword} passwordStrength={passwordStrength}/>
     </div>
   );
 }
