@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useCallback } from "react";
 import CopyIcon from "./CopyIcon";
 
 interface Props {
@@ -7,12 +7,18 @@ interface Props {
 
 const DisplayGeneratedPassword = ({ password }: Props) => {
 
+  const copyPassword = useCallback(() => {
+    navigator.clipboard.writeText(password);
+  }, [password]);
+
 	return (
-	      <section className="bg-dark-grey w-full mb-[16px] p-[16px] flex">
+	      <section className="bg-dark-grey w-full mb-[16px] p-[16px] flex" onClick={copyPassword}>
 	        <p className='text-almost-white text-[22px]'>
 	          {password}
 	        </p>
-        	<CopyIcon />
+	        <section className='cursor-pointer' onClick={copyPassword}>
+        		<CopyIcon />	        	
+	        </section>
 	      </section>
 	);
 };
