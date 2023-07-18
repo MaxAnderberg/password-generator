@@ -12,11 +12,11 @@ const DisplayGeneratedPassword = ({ password }: Props) => {
   }, [password]);
 
 	return (
-	      <section className="bg-dark-grey w-full mb-[16px] p-[16px] flex" onClick={copyPassword}>
+	      <section className="bg-dark-grey w-full mb-[16px] p-[16px] flex items-center" onClick={copyPassword}>
 	        <p className='text-almost-white text-[22px]'>
 	          {password}
 	        </p>
-	        <section className='cursor-pointer' onClick={copyPassword}>
+	        <section className='cursor-pointer ml-auto' onClick={copyPassword}>
         		<CopyIcon />	        	
 	        </section>
 	      </section>
