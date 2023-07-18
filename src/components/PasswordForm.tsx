@@ -1,14 +1,15 @@
 import { useState, ChangeEvent, FormEvent } from 'react'
 import CheckBox from './CheckBox';
 import { DisplayPasswordStrength } from './DisplayPasswordStrength';
+import { CalculatePasswordStrength } from '../CalculatePasswordStrength';
 
 type Props = {
-	setPasswordConfig: Function
+	handleGeneratePassword: Function
+	passwordStrength: number
 };
 
-export const PasswordForm = ({setPasswordConfig}: Props) => {
+export const PasswordForm = ({handleGeneratePassword, passwordStrength}: Props) => {
 
-	// TODO: I will have to extract these states to global level.
 	const [uppercase, setUppercase] = useState(false)
 	const [lowercase, setLowercase] = useState(false)
 	const [numbers, setNumbers] = useState(false)
@@ -22,7 +23,7 @@ export const PasswordForm = ({setPasswordConfig}: Props) => {
 	const handleOnSubmit = ( event:FormEvent<HTMLFormElement> ) => {
 		event.preventDefault()
 		const charLength = parseInt(value)
-		setPasswordConfig({
+		handleGeneratePassword({
 			uppercase,
 			lowercase,
 			numbers,
@@ -52,7 +53,7 @@ export const PasswordForm = ({setPasswordConfig}: Props) => {
 				<CheckBox label='Include Numbers' checked={numbers} setChecked={setNumbers}/>
 				<CheckBox label='Include Symbols' checked={symbols} setChecked={setSymbols}/>
 			</section>
-			<DisplayPasswordStrength />
+			<DisplayPasswordStrength passwordStrength={passwordStrength}/>
 			<button type='submit' className="bg-[#A4FFAF] text-[#24232C] w-full py-[17px] px-[103px]">Generate</button>
 		</form>
 	);

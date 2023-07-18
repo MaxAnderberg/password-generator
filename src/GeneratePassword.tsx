@@ -1,6 +1,6 @@
 import { PasswordConfig } from "./domain/Domain"
 
-export const GeneratePassword = (config: PasswordConfig, setPasswordStrength: Function): string => {
+export const GeneratePassword = (config: PasswordConfig): string => {
   const upperChars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
   const lowerChars = 'abcdefghijklmnopqrstuvwxyz';
   const numberChars = '0123456789';
@@ -34,7 +34,6 @@ export const GeneratePassword = (config: PasswordConfig, setPasswordStrength: Fu
   	password += allCharacters[randomIndex]
   }
 
-  setPasswordStrength(password)
   console.log('this is PW: ', password)
   return password;
 }
