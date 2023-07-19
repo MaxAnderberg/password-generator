@@ -34,7 +34,6 @@ export const GeneratePassword = (config: PasswordConfig): string => {
   	password += allCharacters[randomIndex]
   }
 
-  console.log('this is PW: ', password)
   return password;
 }
 
