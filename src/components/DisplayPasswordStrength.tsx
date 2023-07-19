@@ -5,7 +5,7 @@ type Props = {
 
 export const DisplayPasswordStrength = ({ passwordStrength }: Props) => {
 	return (
-		<section className='flex bg-[#18171F] p-[17px] mb-[16px] justify-between'>
+		<section className='flex bg-[#18171F] py-[17px] mb-[16px] justify-between'>
 			<p className='text-[#817D92] text-[16px]'>STRENGTH</p>
 			<div className='flex gap-[8px]'>
 				{
