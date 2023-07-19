@@ -2,6 +2,7 @@ import { useState, ChangeEvent, FormEvent } from 'react'
 import CheckBox from './CheckBox';
 import { DisplayPasswordStrength } from './DisplayPasswordStrength';
 import { CalculatePasswordStrength } from '../CalculatePasswordStrength';
+import { ArrowIcon } from './ArrowIcon'; 
 
 type Props = {
 	handleGeneratePassword: Function
@@ -54,7 +55,10 @@ export const PasswordForm = ({handleGeneratePassword, passwordStrength}: Props) 
 				<CheckBox label='Include Symbols' checked={symbols} setChecked={setSymbols}/>
 			</section>
 			<DisplayPasswordStrength passwordStrength={passwordStrength}/>
-			<button type='submit' className="bg-[#A4FFAF] text-[#24232C] w-full py-[17px] px-[103px]">Generate</button>
+			<button type='submit' className="bg-[#A4FFAF] flex gap-[16px] items-center text-[#24232C] w-full py-[17px] px-[103px] hover:bg-transparent hover:border-[#A4FFAF] hover:text-[#A4FFAF] hover:border-[2px]">
+				Generate
+				<ArrowIcon />
+			</button>
 		</form>
 	);
 };
