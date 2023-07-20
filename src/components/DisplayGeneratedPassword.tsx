@@ -13,8 +13,8 @@ const DisplayGeneratedPassword = ({ password }: Props) => {
 
 	return (
 	      <section className="bg-dark-grey w-full mb-[16px] p-[16px] flex items-center" onClick={copyPassword}>
-	        <p className='text-almost-white text-[22px]'>
-	          {password}
+	        <p className={`text-almost-white ${password ? 'opacity-100' : 'opacity-25'}  text-[22px]`}>
+	          {password ? password : 'P4$5W0rD!'}
 	        </p>
 	        <section className='cursor-pointer ml-auto' onClick={copyPassword}>
         		<CopyIcon />	        	
