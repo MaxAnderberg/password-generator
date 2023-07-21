@@ -2,7 +2,7 @@ import { useState, ChangeEvent, FormEvent } from 'react'
 import CheckBox from './CheckBox';
 import { DisplayPasswordStrength } from './DisplayPasswordStrength';
 import { CalculatePasswordStrength } from '../CalculatePasswordStrength';
-import { ArrowIcon } from './ArrowIcon'; 
+import { ArrowIcon } from './ArrowIcon';
 
 type Props = {
 	handleGeneratePassword: Function
@@ -43,7 +43,7 @@ export const PasswordForm = ({handleGeneratePassword, passwordStrength}: Props) 
 				<input
 					type="range"
 					onChange={handleCharLength}
-					className="w-full appearance-none bg-black h-[8px]"
+					className="w-full appearance-none bg-black h-[8px] focus:ring-red-200 cursor-pointer"
 					min="4"
 					max="20"
 				/>
