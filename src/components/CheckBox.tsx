@@ -8,7 +8,7 @@ type Props = {
 
 const CheckBox = ({ label, checked, setChecked }: Props) => {
   return (
-      <label className="cursor-pointer">
+      <label className="cursor-pointer flex items-center">
         <div className={`w-5 h-5 inline-block border-2 border-[#E6E5EA] ${checked ? 'bg-neon-green border-[#A4FFAF]' : 'bg-transparent'}`}>
           {checked && (
             <svg
