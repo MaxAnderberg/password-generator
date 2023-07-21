@@ -20,13 +20,13 @@ const CheckBox = ({ label, checked, setChecked }: Props) => {
             </svg>
           )}
         </div>
-      <input 
-        className="hidden" 
-        type="checkbox" 
-        checked={checked} 
-        onChange={() => setChecked(!checked)} 
+      <input
+        className="hidden"
+        type="checkbox"
+        checked={checked}
+        onChange={() => setChecked(!checked)}
       />
-      <span className='ml-2'>{label}</span>
+      <span className='ml-[20px]'>{label}</span>
     </label>
   )
 }
