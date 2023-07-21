@@ -55,7 +55,7 @@ export const PasswordForm = ({handleGeneratePassword, passwordStrength}: Props) 
 				<CheckBox label='Include Symbols' checked={symbols} setChecked={setSymbols}/>
 			</section>
 			<DisplayPasswordStrength passwordStrength={passwordStrength}/>
-			<button type='submit' className="bg-[#A4FFAF] flex gap-[16px] items-center text-[#24232C] w-full py-[17px] px-[103px] hover:bg-transparent border-[#A4FFAF] hover:text-[#A4FFAF] border-[2px]">
+			<button type='submit' className="bg-[#A4FFAF] flex gap-[16px] items-center text-[#24232C] w-full py-[17px] px-[103px] hover:bg-transparent border-[#A4FFAF] hover:text-[#A4FFAF] border-[2px] md:text-[18px] md:justify-center">
 				Generate
 				<ArrowIcon />
 			</button>
