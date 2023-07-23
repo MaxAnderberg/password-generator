@@ -59,12 +59,12 @@ export const PasswordForm = ({ handleGeneratePassword, passwordStrength }: Props
 					railStyle={{
 						backgroundColor: 'black',
 						height: '8px',
-						borderRadius: '4px',
+						borderRadius: '0px',
 					}}
 					trackStyle={{
 						backgroundColor: '#A4FFAF',
 						height: '8px',
-						borderRadius: '4px',
+						borderRadius: '0px',
 					}}
 					onChange={handleCharLength}
 				/>
