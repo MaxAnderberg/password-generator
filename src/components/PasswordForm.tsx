@@ -3,9 +3,8 @@ import CheckBox from './CheckBox';
 import { DisplayPasswordStrength } from './DisplayPasswordStrength';
 import { CalculatePasswordStrength } from '../CalculatePasswordStrength';
 import { ArrowIcon } from './ArrowIcon';
-import Slider from 'rc-slider';
 import 'rc-slider/assets/index.css';
-import './rc-slide-custom.css'
+import { PasswordLengthSlider } from './PasswordLengthSlider/PasswordLengthSlider';
 
 type Props = {
 	handleGeneratePassword: Function
@@ -43,31 +42,7 @@ export const PasswordForm = ({ handleGeneratePassword, passwordStrength }: Props
 				<span className='text-[#A4FFAF] text-[24px] font-bold'>{value}</span>
 			</section>
 			<section className="mb-[42px]">
-				<Slider
-					min={4}
-					max={20}
-
-					handleStyle={{
-						border: 'none',
-						backgroundColor: '#E6E5EA',
-						width: '20px',
-						height: '20px',
-						marginTop: '-7px',
-						opacity: '1',
-						boxShadow: 'none',
-					}}
-					railStyle={{
-						backgroundColor: 'black',
-						height: '8px',
-						borderRadius: '0px',
-					}}
-					trackStyle={{
-						backgroundColor: '#A4FFAF',
-						height: '8px',
-						borderRadius: '0px',
-					}}
-					onChange={handleCharLength}
-				/>
+				<PasswordLengthSlider handleCharLength={handleCharLength} />
 			</section>
 			<section className="flex flex-col items-start gap-[17px] mb-[32px]">
 				<CheckBox label='Include Uppercase Letters' checked={uppercase} setChecked={setUppercase} />
