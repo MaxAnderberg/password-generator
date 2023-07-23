@@ -12,7 +12,6 @@ export const PasswordLengthSlider = ({handleCharLength}: Props) => {
       <Slider
         min={4}
         max={20}
-
         handleStyle={{
           border: 'none',
           backgroundColor: '#E6E5EA',
