@@ -12,14 +12,13 @@ type Props = {
 };
 
 export const PasswordForm = ({ handleGeneratePassword, passwordStrength }: Props) => {
-	const [isDragged, setIsDragged] = useState(false);
 	const [uppercase, setUppercase] = useState(false)
 	const [lowercase, setLowercase] = useState(false)
 	const [numbers, setNumbers] = useState(false)
 	const [symbols, setSymbols] = useState(false)
 	const [value, setValue] = useState(20);
 
-	const handleCharLength = (newValue) => {
+	const handleCharLength = (newValue: number) => {
 		setValue(newValue);
 	};
 
