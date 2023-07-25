@@ -4,14 +4,16 @@ import './rc-slide-custom.css'
 
 type Props = {
   handleCharLength: Function
+  value: number
 }
 
-export const PasswordLengthSlider = ({handleCharLength}: Props) => {
+export const PasswordLengthSlider = ({handleCharLength, value}: Props) => {
   return (
     <>
       <Slider
         min={4}
         max={20}
+        value={value}
         handleStyle={{
           border: 'none',
           backgroundColor: '#E6E5EA',

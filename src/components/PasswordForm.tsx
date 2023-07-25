@@ -16,7 +16,7 @@ export const PasswordForm = ({ handleGeneratePassword, passwordStrength }: Props
 	const [lowercase, setLowercase] = useState(false)
 	const [numbers, setNumbers] = useState(false)
 	const [symbols, setSymbols] = useState(false)
-	const [value, setValue] = useState(20);
+	const [value, setValue] = useState(10);
 
 	const handleCharLength = (newValue: number) => {
 		setValue(newValue);
@@ -41,7 +41,7 @@ export const PasswordForm = ({ handleGeneratePassword, passwordStrength }: Props
 				<span className='text-[#A4FFAF] text-[24px] font-bold'>{value}</span>
 			</section>
 			<section className="mb-[42px]">
-				<PasswordLengthSlider handleCharLength={handleCharLength} />
+				<PasswordLengthSlider handleCharLength={handleCharLength} value={value}/>
 			</section>
 			<section className="flex flex-col items-start gap-[17px] mb-[32px]">
 				<CheckBox label='Include Uppercase Letters' checked={uppercase} setChecked={setUppercase} />
