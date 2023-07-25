@@ -26,7 +26,7 @@ const CheckBox = ({ label, checked, setChecked }: Props) => {
         checked={checked}
         onChange={() => setChecked(!checked)}
       />
-      <span className='ml-[20px]'>{label}</span>
+      <span className='ml-[20px] text-[16px] md:text-[18px]'>{label}</span>
     </label>
   )
 }
