@@ -1,7 +1,6 @@
-import { useState, ChangeEvent, FormEvent, SetStateAction } from 'react'
+import { useState, FormEvent } from 'react'
 import CheckBox from './CheckBox';
 import { DisplayPasswordStrength } from './DisplayPasswordStrength';
-import { CalculatePasswordStrength } from '../CalculatePasswordStrength';
 import { ArrowIcon } from './ArrowIcon';
 import 'rc-slider/assets/index.css';
 import { PasswordLengthSlider } from './PasswordLengthSlider/PasswordLengthSlider';
