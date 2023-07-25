@@ -37,7 +37,7 @@ export const PasswordForm = ({ handleGeneratePassword, passwordStrength }: Props
 	return (
 		<form className="bg-dark-grey p-[16px] md:p-[32px] w-full" onSubmit={handleOnSubmit}>
 			<section className="flex justify-between mb-[23px]">
-				<span className=''>Character Length</span>
+				<span className='md:text-[18px]'>Character Length</span>
 				<span className='text-[#A4FFAF] text-[24px] font-bold'>{value}</span>
 			</section>
 			<section className="mb-[42px]">
