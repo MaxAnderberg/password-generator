@@ -1,6 +1,5 @@
 type Props = {
 	passwordStrength: number
-	password: string
 }
 
 export const DisplayPasswordStrength = ({ passwordStrength }: Props) => {
