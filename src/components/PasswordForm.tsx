@@ -25,6 +25,12 @@ export const PasswordForm = ({ handleGeneratePassword, passwordStrength }: Props
 	const handleOnSubmit = (event: FormEvent<HTMLFormElement>) => {
 		event.preventDefault()
 		const charLength = value
+
+		if (!uppercase && !lowercase && !numbers && !symbols) {
+			alert('Please select at least one option!');
+			return;
+		}
+
 		handleGeneratePassword({
 			uppercase,
 			lowercase,
