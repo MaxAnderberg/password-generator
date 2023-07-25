@@ -29,7 +29,7 @@ export const GeneratePassword = (config: PasswordConfig): string => {
   	password += getRandomCharacter(symbolChars)
 	}
 
-  for(let i = password.length + 1; i < config.charLength; i++) {
+  for(let i = password.length; i < config.charLength; i++) {
   	const randomIndex = Math.floor(Math.random() * allCharacters.length)
   	password += allCharacters[randomIndex]
   }
