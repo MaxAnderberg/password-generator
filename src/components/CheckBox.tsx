@@ -11,13 +11,7 @@ const CheckBox = ({ label, checked, setChecked }: Props) => {
       <label className="cursor-pointer flex items-center">
         <div className={`w-5 h-5 inline-block border-2 ${checked ? 'bg-neon-green border-[#A4FFAF]' : 'bg-transparent'}`}>
           {checked && (
-            <svg
-              className="fill-current text-black"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 20 20"
-            >
-              <path d="M0 11l2-2 5 5L18 3l2 2L7 18z" />
-            </svg>
+            <svg width="14" height="12" xmlns="http://www.w3.org/2000/svg"><path stroke="#18171F" stroke-width="3" fill="none" d="M1 5.607 4.393 9l8-8"/></svg>
           )}
         </div>
       <input
