@@ -11,7 +11,6 @@ This is a solution to the [Password generator app challenge on Frontend Mentor](
   - [Links](#links)
 - [Built with](#built-with)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
