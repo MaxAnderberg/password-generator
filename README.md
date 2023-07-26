@@ -12,8 +12,6 @@ This is a solution to the [Password generator app challenge on Frontend Mentor](
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### The challenge
@@ -27,7 +25,8 @@ Users should be able to:
 - See hover and focus states for all interactive elements on the page
 
 ### Screenshot
-
+<img src='./desktop.png' width='350'/>
+<img src='./mobile.png' width='350' />
 
 ### Links
 
