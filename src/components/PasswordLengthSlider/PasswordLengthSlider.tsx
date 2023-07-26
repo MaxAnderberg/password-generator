@@ -3,7 +3,7 @@ import 'rc-slider/assets/index.css';
 import './rc-slide-custom.css'
 
 type Props = {
-  handleCharLength: Function
+  handleCharLength: (value: number | number[]) => void;
   value: number
 }
 

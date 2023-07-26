@@ -17,8 +17,12 @@ export const PasswordForm = ({ handleGeneratePassword, passwordStrength }: Props
 	const [symbols, setSymbols] = useState(false)
 	const [value, setValue] = useState(10);
 
-	const handleCharLength = (newValue: number) => {
-		setValue(newValue);
+	const handleCharLength = (newValue: number | number[]) => {
+		if (Array.isArray(newValue)) {
+			setValue(newValue[0]);
+		} else {
+			setValue(newValue);
+		}
 	};
 
 	const handleOnSubmit = (event: FormEvent<HTMLFormElement>) => {
