@@ -1,2 +1,4 @@
 /node_modules
 /README_INST.md
+.DS_Store
+.prettierignore
