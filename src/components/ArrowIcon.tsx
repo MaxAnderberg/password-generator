@@ -1,9 +1,14 @@
-export const ArrowIcon = () => {
+interface Props {
+	width?: string
+	height?: string
+}
+
+export const ArrowIcon = ({width = '12', height = '12'}: Props) => {
 
 	return (
 		<svg 
-			width="12" 
-			height="12" 
+			width={width}
+			height={height} 
 			viewBox="0 0 12 12" 
 			fill="none" 
 			className="color-[#A4FFAF]"
