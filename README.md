@@ -1,4 +1,5 @@
 # Password generator app
+Tailor your password security with our adaptable tool, generating robust passwords to match your unique criteria.
 
 This is a solution to the [Password generator app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/password-generator-app-Mr8CLycqjh).
 
