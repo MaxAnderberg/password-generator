@@ -38,9 +38,7 @@ Users should be able to:
 - Flexbox
 - Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
-- [TailwindCSS](https://nextjs.org/) - React framework
-- [Styled Components]() - For styles
+- [TailwindCSS](https://tailwindcss.com/) - CSS framework
 
 ## Author
-
 - Website - [Max Anderberg](https://maxanderberg.se)
