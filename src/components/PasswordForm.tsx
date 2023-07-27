@@ -3,7 +3,7 @@ import CheckBox from './CheckBox';
 import { DisplayPasswordStrength } from './DisplayPasswordStrength';
 import { ArrowIcon } from './ArrowIcon';
 import 'rc-slider/assets/index.css';
-import { PasswordLengthSlider } from './PasswordLengthSlider';
+import { PasswordLengthSlider } from './PasswordLendthSlider/PasswordLengthSlider';
 import { PasswordConfig } from '../domain/Domain';
 
 type Props = {
