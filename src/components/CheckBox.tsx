@@ -1,16 +1,16 @@
 import React from 'react'
 
 type Props = {
-  label: string
-  checked: boolean
-  setChecked: React.Dispatch<React.SetStateAction<boolean>>
-}
+  label: string;
+  checked: boolean;
+  setChecked: React.Dispatch<React.SetStateAction<boolean>>;
+};
 
 const CheckBox = ({ label, checked, setChecked }: Props) => {
 
   const handleChecking = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setChecked(event.target.checked)
-  }
+    setChecked(event.target.checked);
+  };
 
   return (
     <label htmlFor={label} className="cursor-pointer flex items-center">
@@ -28,7 +28,7 @@ const CheckBox = ({ label, checked, setChecked }: Props) => {
       />
       <span className='ml-[20px] text-[16px] md:text-[18px]'>{label}</span>
     </label>
-  )
-}
+  );
+};
 
-export default CheckBox
+export default CheckBox;
