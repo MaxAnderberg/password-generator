@@ -1,4 +1,4 @@
-import { useState, useEffect, ChangeEvent } from "react";
+import { useState, useEffect } from "react";
 import "./App.css";
 import DisplayGeneratedPassword from "./components/DisplayGeneratedPassword";
 import { PasswordForm } from "./components/PasswordForm";
@@ -8,14 +8,6 @@ import { GeneratePassword } from "./GeneratePassword";
 
 function App() {
   
-  const [passwordConfig, setPasswordConfig] = useState<PasswordConfig>({
-    lowercase: false,
-    uppercase: false,
-    numbers: false,
-    symbols: false,
-    charLength: 1
-  })
-
   const [password, setPassword] = useState<string>('')
   const [passwordStrength, setPasswordStrength] = useState<number>(2)
 
