@@ -4,9 +4,10 @@ import { DisplayPasswordStrength } from './DisplayPasswordStrength';
 import { ArrowIcon } from './ArrowIcon';
 import 'rc-slider/assets/index.css';
 import { PasswordLengthSlider } from './PasswordLengthSlider/PasswordLengthSlider';
+import { PasswordConfig } from '../domain/Domain';
 
 type Props = {
-	handleGeneratePassword: Function
+	handleGeneratePassword:  (value: PasswordConfig) => void;
 	passwordStrength: number
 };
 
