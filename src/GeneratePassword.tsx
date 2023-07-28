@@ -1,6 +1,11 @@
 import { PasswordConfig } from "./domain/Domain"
 
 export const GeneratePassword = (config: PasswordConfig): string => {
+
+  if (!config.uppercase && !config.lowercase && !config.numbers && !config.symbols) {
+    throw new Error('Please select at least one option!')
+  }
+
   const upperChars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
   const lowerChars = 'abcdefghijklmnopqrstuvwxyz';
   const numberChars = '0123456789';
