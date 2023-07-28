@@ -5,13 +5,14 @@ import { ArrowIcon } from './ArrowIcon';
 import 'rc-slider/assets/index.css';
 import { PasswordLengthSlider } from './PasswordLendthSlider/PasswordLengthSlider';
 import { PasswordConfig } from '../domain/Domain';
+import { GeneratePassword } from '../GeneratePassword';
 
 type Props = {
-	handleGeneratePassword:  (value: PasswordConfig) => void;
+	setPassword:  (value: string) => void;
 	passwordStrength: number
 };
 
-export const PasswordForm = ({ handleGeneratePassword, passwordStrength }: Props) => {
+export const PasswordForm = ({ setPassword, passwordStrength }: Props) => {
 	const [uppercase, setUppercase] = useState(false)
 	const [lowercase, setLowercase] = useState(false)
 	const [numbers, setNumbers] = useState(false)
@@ -29,19 +30,22 @@ export const PasswordForm = ({ handleGeneratePassword, passwordStrength }: Props
 	const handleOnSubmit = (event: FormEvent<HTMLFormElement>) => {
 		event.preventDefault()
 		const charLength = value
+		
+		try {
+			const password = GeneratePassword({
+				uppercase,
+				lowercase,
+				numbers,
+				symbols,
+				charLength,
+			})
 
-		if (!uppercase && !lowercase && !numbers && !symbols) {
-			alert('Please select at least one option!');
-			return;
+			setPassword(password)
+		} catch (error) {
+			alert(error)
+			console.error(error)
 		}
 
-		handleGeneratePassword({
-			uppercase,
-			lowercase,
-			numbers,
-			symbols,
-			charLength,
-		})
 	}
 
 	return (
