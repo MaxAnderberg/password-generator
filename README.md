@@ -10,6 +10,7 @@ This is a solution to the [Password generator app challenge on Frontend Mentor](
   - [Screenshot](#screenshot)
   - [Links](#links)
 - [Built with](#built-with)
+- [Local Development](#local-development)
 - [Author](#author)
 
 ## Overview
@@ -39,6 +40,16 @@ Users should be able to:
 - Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
 - [TailwindCSS](https://tailwindcss.com/) - CSS framework
+
+
+## Local Development
+
+To set up the project locally, follow these steps:
+
+1. Clone the project: `git clone https://github.com/MaxAnderberg/password-generator`
+2. Navigate into the project directory: `cd password-generator`
+3. Install dependencies: `npm install`
+4. Start the development server: `npm run dev`
 
 ## Author
 - Website - [Max Anderberg](https://maxanderberg.se)
