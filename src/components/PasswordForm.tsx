@@ -12,12 +12,12 @@ type Props = {
 };
 
 export const PasswordForm = ({ setPassword, passwordStrength }: Props) => {
-	const [uppercase, setUppercase] = useState(false)
+	const [uppercase, setUppercase] = useState(true)
 	const [lowercase, setLowercase] = useState(false)
 	const [numbers, setNumbers] = useState(false)
 	const [symbols, setSymbols] = useState(false)
 	const [value, setValue] = useState(10);
-
+	
 	const handleCharLength = (newValue: number | number[]) => {
 		if (Array.isArray(newValue)) {
 			setValue(newValue[0]);
@@ -41,11 +41,12 @@ export const PasswordForm = ({ setPassword, passwordStrength }: Props) => {
 
 			setPassword(password)
 		} catch (error) {
-			alert(error)
 			console.error(error)
 		}
 
 	}
+
+	const	isGenerateDisabled = !uppercase && !lowercase && !numbers && !symbols
 
 	return (
 		<form className="bg-dark-grey p-[16px] md:p-[32px] w-full" onSubmit={handleOnSubmit}>
@@ -63,7 +64,7 @@ export const PasswordForm = ({ setPassword, passwordStrength }: Props) => {
 				<CheckBox label='Include Symbols' checked={symbols} setChecked={setSymbols} />
 			</section>
 			<DisplayPasswordStrength passwordStrength={passwordStrength} />
-			<button type='submit' className="bg-[#A4FFAF] flex gap-[16px] items-center text-[#24232C] w-full py-[17px] px-[103px] hover:bg-transparent border-[#A4FFAF] hover:text-[#A4FFAF] border-[2px] md:text-[18px] md:justify-center">
+			<button disabled={isGenerateDisabled} type='submit' className="disabled:opacity-25 bg-[#A4FFAF] flex gap-[16px] items-center text-[#24232C] w-full py-[17px] px-[103px] disabled:bg-transparent disabled:text-[#A4FFAF] hover:bg-transparent border-[#A4FFAF] hover:text-[#A4FFAF] border-[2px] md:text-[18px] md:justify-center">
 				Generate
 				<ArrowIcon />
 			</button>
